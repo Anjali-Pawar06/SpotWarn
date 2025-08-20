@@ -42,7 +42,8 @@ function access(){
     		 <center>  <input type="submit" id="sendloc" value="Go" class="btn btn-success" ></center>
  						 </div>
 
-         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8DXyFQH6HR6IkcTVOIr2CxWyUSIYNAqg&libraries=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=<%= System.getenv("GOOGLE_API_KEY") %>&libraries=places"></script>
+
 
 <script type="text/javascript">
 
@@ -136,3 +137,4 @@ function access(){
     </body>
 
 </html>
+
